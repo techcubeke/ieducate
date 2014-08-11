@@ -30,8 +30,13 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
+				array('label'=>'School', 'url'=>array('/schoolinfo')),
+				array('label'=>'Students', 'url'=>array('/student')),
+				array('label'=>'Employess', 'url'=>array('/staff')),
+				array('label'=>'Examinitions', 'url'=>array('/examrecord')),
+				array('label'=>'Vendors', 'url'=>array('/vendor')),		
+				array('label'=>'Fees', 'url'=>array('/feepayment')),
+				array('label'=>'Transport', 'url'=>array('/transportation')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
