@@ -125,20 +125,34 @@ $gridDataProvider = new CArrayDataProvider(array(
 		<?php
 $connection = mysqli_connect('localhost', 'root', 'root', 'sc');
 mysqli_select_db($connection,'sc');
-
-$query =mysqli_query($connection, "SELECT * FROM staff"); //You don't need a ; like you do in SQL
-$result = mysqli_query($connection,"SELECT * FROM staff");
+/* 
+$query =mysqli_query($connection, "SELECT * FROM dormroom"); //You don't need a ; like you do in SQL
+$result = mysqli_query($connection,"SELECT * FROM dormroom");
 
 echo "<table>"; // start a table tag in the HTML
 
-while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
-	echo "<tr><td>" . $row['firstName'] . "</td><td>" . $row['staffid'] . "</td></tr>";  //$row['index'] the index here is a field name
+while($row = mysqli_fetch_array($result)){  //Creates a loop to loop through results
+		echo "<tr><td>" . $row['dormname'] . "</td><td>" . $row['beds'] . "</td></tr>";  //$row['index'] the index here is a field name
 }
 
-echo "</table>"; //Close the table in HTML
+echo "</table>"; //Close the table in HTML */
+
+$rawData=Yii::app()->db->createCommand('SELECT * FROM dormroom')->queryAll();
+// or using: $rawData=User::model()->findAll();
+$dataProvider=new CArrayDataProvider($rawData, array(
+		'id'=>'dormID',
+		'sort'=>array(
+				'attributes'=>array(
+						 'dormname', 'beds',
+				),
+		),
+		'pagination'=>array(
+				'pageSize'=>10,
+		),
+));
+//
 
 mysqli_close($connection);
-
 ?>
 	</div>
 	<!--/span-->
