@@ -10,8 +10,8 @@
 			'encodeLabel'=>false,
 			'items'=>array(
 				array('label'=>'<i class="icon icon-home"></i>  Dashboard <span class="label label-info pull-right">BETA</span>', 'url'=>array('/site/index'),'itemOptions'=>array('class'=>'')),
-				array('label'=>'<i class="icon icon-search"></i> About this Application<span class="label label-important pull-right">HOT</span>', 'url'=>'http://www.techcube.co.ke/'),
-				array('label'=>'<i class="icon icon-envelope"></i> Messages <span class="badge badge-success pull-right">12</span>', 'url'=>'#'),
+				array('label'=>'<i class="icon icon-search"></i> About this Application<span class="label label-important pull-right">HOT</span>', 'url'=>'http://www.techcube.co.ke/schoolapp'),
+				array('label'=>'<i class="icon icon-envelope"></i> Messages <span class="badge badge-success pull-right">0</span>', 'url'=>'#'),
 				// Include the operations menu
 				array('label'=>'OPERATIONS','items'=>$this->menu),
 			),
@@ -45,7 +45,7 @@
               </td>
             </tr>
             <tr>
-              <td>Closed Sales</td>
+              <td>System Speed</td>
               <td>
               	<div class="progress progress-info">
                   <div class="bar" style="width: 20%"></div>
@@ -58,13 +58,14 @@
         
             <dl class="dl-horizontal">
               <dt>Account status</dt>
-              <dd>$1,234,002</dd>
-              <dt>Open Invoices</dt>
-              <dd>$245,000</dd>
-              <dt>Overdue Invoices</dt>
-              <dd>$20,023</dd>
-              <dt>Converted Quotes</dt>
-              <dd>$560,000</dd>
+              <dd>Premium</dd>
+              <dt>IEducate App</dt>
+              <dd>&copy; <?php echo date("Y") ?></dd>
+              <dt>Support Contact</dt>
+              <dd>254728944815</dd>
+               <dt>Date</dt>
+              <dd> <?php echo date("d/m/y") ?></dd>
+             
               
             </dl>
       </div>

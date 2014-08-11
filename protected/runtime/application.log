@@ -61,3 +61,455 @@ REQUEST_URI=/ieducate/curriculum
 in C:\wamp\www\ieducate\themes\abound\views\layouts\tpl_navigation.php (43)
 in C:\wamp\www\ieducate\themes\abound\views\layouts\main.php (56)
 in C:\wamp\www\ieducate\themes\abound\views\layouts\column2.php (90)
+2014/08/11 10:37:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/site/index.php?about
+---
+2014/08/11 10:37:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('about')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('about')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/site/about
+---
+2014/08/11 10:55:51 [error] [php] date() expects at most 2 parameters, 3 given (C:\wamp\www\ieducate\themes\abound\views\layouts\column2.php:67)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): StaffController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(784): StaffController->renderFile()
+#2 C:\wamp\www\ieducate\protected\controllers\StaffController.php(128): StaffController->render()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): StaffController->actionIndex()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): StaffController->runAction()
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): StaffController->filterAccessControl()
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): StaffController->runActionWithFilters()
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): StaffController->run()
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/staff
+in C:\wamp\www\ieducate\themes\abound\views\layouts\column2.php (67)
+in C:\wamp\www\ieducate\protected\controllers\StaffController.php (128)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 10:56:09 [error] [php] date() expects parameter 2 to be long, string given (C:\wamp\www\ieducate\themes\abound\views\layouts\column2.php:67)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): StaffController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(784): StaffController->renderFile()
+#2 C:\wamp\www\ieducate\protected\controllers\StaffController.php(128): StaffController->render()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): StaffController->actionIndex()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): StaffController->runAction()
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): StaffController->filterAccessControl()
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): StaffController->runActionWithFilters()
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): StaffController->run()
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/staff
+in C:\wamp\www\ieducate\themes\abound\views\layouts\column2.php (67)
+in C:\wamp\www\ieducate\protected\controllers\StaffController.php (128)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:05:20 [error] [php] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead (C:\wamp\www\ieducate\themes\abound\views\site\index.php:16)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\ieducate\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/index
+in C:\wamp\www\ieducate\themes\abound\views\site\index.php (16)
+in C:\wamp\www\ieducate\protected\controllers\SiteController.php (32)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:06:56 [error] [php] mysqli_select_db() expects exactly 2 parameters, 1 given (C:\wamp\www\ieducate\themes\abound\views\site\index.php:17)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\ieducate\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/index
+in C:\wamp\www\ieducate\themes\abound\views\site\index.php (17)
+in C:\wamp\www\ieducate\protected\controllers\SiteController.php (32)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:08:24 [error] [php] mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead (C:\wamp\www\ieducate\themes\abound\views\site\index.php:20)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\ieducate\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/index
+in C:\wamp\www\ieducate\themes\abound\views\site\index.php (20)
+in C:\wamp\www\ieducate\protected\controllers\SiteController.php (32)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:08:48 [error] [php] mysqli_query() expects at least 2 parameters, 1 given (C:\wamp\www\ieducate\themes\abound\views\site\index.php:20)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\ieducate\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/index
+in C:\wamp\www\ieducate\themes\abound\views\site\index.php (20)
+in C:\wamp\www\ieducate\protected\controllers\SiteController.php (32)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:09:39 [error] [php] mysqli_query() expects parameter 1 to be mysqli, boolean given (C:\wamp\www\ieducate\themes\abound\views\site\index.php:20)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\ieducate\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/index
+in C:\wamp\www\ieducate\themes\abound\views\site\index.php (20)
+in C:\wamp\www\ieducate\protected\controllers\SiteController.php (32)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:10:02 [error] [php] mysqli_query() expects parameter 1 to be mysqli, boolean given (C:\wamp\www\ieducate\themes\abound\views\site\index.php:20)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\ieducate\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/index
+in C:\wamp\www\ieducate\themes\abound\views\site\index.php (20)
+in C:\wamp\www\ieducate\protected\controllers\SiteController.php (32)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:10:14 [error] [php] mysqli_query() expects at least 2 parameters, 1 given (C:\wamp\www\ieducate\themes\abound\views\site\index.php:20)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\ieducate\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/index
+in C:\wamp\www\ieducate\themes\abound\views\site\index.php (20)
+in C:\wamp\www\ieducate\protected\controllers\SiteController.php (32)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:18:31 [error] [php] mysqli_query() expects at least 2 parameters, 1 given (C:\wamp\www\ieducate\themes\abound\views\site\index.php:21)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\ieducate\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/index
+in C:\wamp\www\ieducate\themes\abound\views\site\index.php (21)
+in C:\wamp\www\ieducate\protected\controllers\SiteController.php (32)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:20:46 [error] [php] mysqli_query() expects at least 2 parameters, 1 given (C:\wamp\www\ieducate\themes\abound\views\site\index.php:21)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\ieducate\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/index
+in C:\wamp\www\ieducate\themes\abound\views\site\index.php (21)
+in C:\wamp\www\ieducate\protected\controllers\SiteController.php (32)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:21:26 [error] [php] mysqli_query() expects parameter 2 to be string, object given (C:\wamp\www\ieducate\themes\abound\views\site\index.php:21)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\ieducate\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/index
+in C:\wamp\www\ieducate\themes\abound\views\site\index.php (21)
+in C:\wamp\www\ieducate\protected\controllers\SiteController.php (32)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:22:18 [error] [php] mysqli_fetch_array() expects parameter 1 to be mysqli_result, object given (C:\wamp\www\ieducate\themes\abound\views\site\index.php:25)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\ieducate\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/index
+in C:\wamp\www\ieducate\themes\abound\views\site\index.php (25)
+in C:\wamp\www\ieducate\protected\controllers\SiteController.php (32)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:22:52 [error] [php] mysql_close(): no MySQL-Link resource supplied (C:\wamp\www\ieducate\themes\abound\views\site\index.php:31)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\wamp\www\ieducate\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/index
+in C:\wamp\www\ieducate\themes\abound\views\site\index.php (31)
+in C:\wamp\www\ieducate\protected\controllers\SiteController.php (32)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:32:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'joindate' at row 1. The SQL statement executed was: INSERT INTO `staff` (`departmentID`, `employeecode`, `initials`, `firstname`, `middlename`, `lastname`, `photoimage`, `employmenttype`, `gender`, `dateofbirth`, `address`, `phoneno`, `email`, `religion`, `jobtitle`, `specialization`, `maritalstatus`, `joindate`, `releasedate`, `nationalID`, `notes`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20).
+in C:\wamp\www\ieducate\protected\controllers\StaffController.php (73)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:32:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'joindate' at row 1. The SQL statement executed was: INSERT INTO `staff` (`departmentID`, `employeecode`, `initials`, `firstname`, `middlename`, `lastname`, `photoimage`, `employmenttype`, `gender`, `dateofbirth`, `address`, `phoneno`, `email`, `religion`, `jobtitle`, `specialization`, `maritalstatus`, `joindate`, `releasedate`, `nationalID`, `notes`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\ieducate\protected\controllers\StaffController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): StaffController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('staff/create')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ieducate/staff/create
+HTTP_REFERER=http://localhost:8080/ieducate/staff/create
+---
+2014/08/11 11:33:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '10/10/1990' for column 'dateofbirth' at row 1. The SQL statement executed was: INSERT INTO `staff` (`departmentID`, `employeecode`, `initials`, `firstname`, `middlename`, `lastname`, `photoimage`, `employmenttype`, `gender`, `dateofbirth`, `address`, `phoneno`, `email`, `religion`, `jobtitle`, `specialization`, `maritalstatus`, `joindate`, `releasedate`, `nationalID`, `notes`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20).
+in C:\wamp\www\ieducate\protected\controllers\StaffController.php (73)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:33:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '10/10/1990' for column 'dateofbirth' at row 1. The SQL statement executed was: INSERT INTO `staff` (`departmentID`, `employeecode`, `initials`, `firstname`, `middlename`, `lastname`, `photoimage`, `employmenttype`, `gender`, `dateofbirth`, `address`, `phoneno`, `email`, `religion`, `jobtitle`, `specialization`, `maritalstatus`, `joindate`, `releasedate`, `nationalID`, `notes`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\ieducate\protected\controllers\StaffController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): StaffController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('staff/create')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ieducate/staff/create
+HTTP_REFERER=http://localhost:8080/ieducate/staff/create
+---
+2014/08/11 11:34:21 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'joindate' at row 1. The SQL statement executed was: INSERT INTO `staff` (`departmentID`, `employeecode`, `initials`, `firstname`, `middlename`, `lastname`, `photoimage`, `employmenttype`, `gender`, `dateofbirth`, `address`, `phoneno`, `email`, `religion`, `jobtitle`, `specialization`, `maritalstatus`, `joindate`, `releasedate`, `nationalID`, `notes`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20).
+in C:\wamp\www\ieducate\protected\controllers\StaffController.php (73)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:34:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'joindate' at row 1. The SQL statement executed was: INSERT INTO `staff` (`departmentID`, `employeecode`, `initials`, `firstname`, `middlename`, `lastname`, `photoimage`, `employmenttype`, `gender`, `dateofbirth`, `address`, `phoneno`, `email`, `religion`, `jobtitle`, `specialization`, `maritalstatus`, `joindate`, `releasedate`, `nationalID`, `notes`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\ieducate\protected\controllers\StaffController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): StaffController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('staff/create')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ieducate/staff/create
+HTTP_REFERER=http://localhost:8080/ieducate/staff/create
+---
+2014/08/11 11:45:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'dateofbirth' at row 1. The SQL statement executed was: INSERT INTO `staff` (`departmentID`, `employeecode`, `initials`, `firstname`, `middlename`, `lastname`, `photoimage`, `employmenttype`, `gender`, `dateofbirth`, `address`, `phoneno`, `email`, `religion`, `jobtitle`, `specialization`, `maritalstatus`, `joindate`, `releasedate`, `nationalID`, `notes`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20).
+in C:\wamp\www\ieducate\protected\controllers\StaffController.php (73)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:45:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'dateofbirth' at row 1. The SQL statement executed was: INSERT INTO `staff` (`departmentID`, `employeecode`, `initials`, `firstname`, `middlename`, `lastname`, `photoimage`, `employmenttype`, `gender`, `dateofbirth`, `address`, `phoneno`, `email`, `religion`, `jobtitle`, `specialization`, `maritalstatus`, `joindate`, `releasedate`, `nationalID`, `notes`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\ieducate\protected\controllers\StaffController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): StaffController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('staff/create')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ieducate/staff/create
+HTTP_REFERER=http://localhost:8080/ieducate/staff/create
+---
+2014/08/11 11:47:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'dateadded' at row 1. The SQL statement executed was: INSERT INTO `user` (`personID`, `roleID`, `username`, `password`, `dateadded`, `datemodified`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\wamp\www\ieducate\protected\controllers\UserController.php (73)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:47:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'dateadded' at row 1. The SQL statement executed was: INSERT INTO `user` (`personID`, `roleID`, `username`, `password`, `dateadded`, `datemodified`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\ieducate\protected\controllers\UserController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ieducate/user/create
+HTTP_REFERER=http://localhost:8080/ieducate/user/create
+---
+2014/08/11 11:47:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '12/12/2014' for column 'dateadded' at row 1. The SQL statement executed was: INSERT INTO `user` (`personID`, `roleID`, `username`, `password`, `dateadded`, `datemodified`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\wamp\www\ieducate\protected\controllers\UserController.php (73)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/11 11:47:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '12/12/2014' for column 'dateadded' at row 1. The SQL statement executed was: INSERT INTO `user` (`personID`, `roleID`, `username`, `password`, `dateadded`, `datemodified`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\ieducate\protected\controllers\UserController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ieducate/user/create
+HTTP_REFERER=http://localhost:8080/ieducate/user/create
+---
+2014/08/11 11:48:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Dorm1".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('Dorm1')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('Dorm1')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dormroom/Dorm1')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/dormroom/Dorm1
+HTTP_REFERER=http://localhost:8080/ieducate/dormroom/create
+---
+2014/08/11 11:48:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Dorm".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('Dorm')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('Dorm')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dormroom/Dorm')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/dormroom/Dorm
+HTTP_REFERER=http://localhost:8080/ieducate/dormroom/create
+---

@@ -61,13 +61,13 @@ class Staff extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('employeecode, firstname, lastname, gender, dateofbirth, phoneno, email, nationalID', 'required'),
+			array('employeecode, firstname, lastname, gender, phoneno, email, nationalID', 'required'),
 			array('departmentID, phoneno, nationalID', 'numerical', 'integerOnly'=>true),
 			array('employeecode, employmenttype, address, email', 'length', 'max'=>50),
 			array('initials, gender', 'length', 'max'=>11),
 			array('firstname, middlename, lastname, religion, jobtitle, specialization, maritalstatus', 'length', 'max'=>20),
 			array('photoimage', 'length', 'max'=>100),
-			array('joindate, releasedate, notes', 'safe'),
+			array('dateofbirth, joindate, releasedate, notes', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('staffID, departmentID, employeecode, initials, firstname, middlename, lastname, photoimage, employmenttype, gender, dateofbirth, address, phoneno, email, religion, jobtitle, specialization, maritalstatus, joindate, releasedate, nationalID, notes', 'safe', 'on'=>'search'),
