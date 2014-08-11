@@ -1,0 +1,63 @@
+2014/08/11 09:43:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "students".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('students')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ieducate/students
+HTTP_REFERER=http://localhost:8080/ieducate/staff
+---
+2014/08/11 09:44:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "students".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('students')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ieducate/students
+HTTP_REFERER=http://localhost:8080/ieducate/staff
+---
+2014/08/11 09:47:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "transport".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('transport')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ieducate/transport
+HTTP_REFERER=http://localhost:8080/ieducate/site/page?view=typography
+---
+2014/08/11 10:08:06 [error] [php] Undefined index: label (C:\wamp\Yii\framework\zii\widgets\CMenu.php:244)
+Stack trace:
+#0 C:\wamp\Yii\framework\zii\widgets\CMenu.php(177): CMenu->renderMenuRecursive()
+#1 C:\wamp\Yii\framework\zii\widgets\CMenu.php(164): CMenu->renderMenu()
+#2 C:\wamp\Yii\framework\web\CBaseController.php(173): CMenu->run()
+#3 C:\wamp\www\ieducate\themes\abound\views\layouts\tpl_navigation.php(43): CurriculumController->widget()
+#4 C:\wamp\www\ieducate\themes\abound\views\layouts\main.php(56): require_once()
+#5 C:\wamp\Yii\framework\web\CBaseController.php(126): require()
+#6 C:\wamp\Yii\framework\web\CBaseController.php(95): CurriculumController->renderInternal()
+#7 C:\wamp\Yii\framework\web\widgets\CContentDecorator.php(76): CurriculumController->renderFile()
+#8 C:\wamp\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#9 C:\wamp\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#10 C:\wamp\Yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#11 C:\wamp\Yii\framework\web\CBaseController.php(300): CurriculumController->endWidget()
+#12 C:\wamp\www\ieducate\themes\abound\views\layouts\column2.php(90): CurriculumController->endContent()
+#13 C:\wamp\Yii\framework\web\CBaseController.php(126): require()
+#14 C:\wamp\Yii\framework\web\CBaseController.php(95): CurriculumController->renderInternal()
+#15 C:\wamp\Yii\framework\web\CController.php(784): CurriculumController->renderFile()
+#16 C:\wamp\www\ieducate\protected\controllers\CurriculumController.php(128): CurriculumController->render()
+#17 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): CurriculumController->actionIndex()
+#18 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CurriculumController->runAction()
+#20 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\wamp\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#22 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CurriculumController->filterAccessControl()
+#23 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#24 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\wamp\Yii\framework\web\CController.php(265): CurriculumController->runActionWithFilters()
+#26 C:\wamp\Yii\framework\web\CWebApplication.php(282): CurriculumController->run()
+#27 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#29 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/curriculum
+in C:\wamp\www\ieducate\themes\abound\views\layouts\tpl_navigation.php (43)
+in C:\wamp\www\ieducate\themes\abound\views\layouts\main.php (56)
+in C:\wamp\www\ieducate\themes\abound\views\layouts\column2.php (90)

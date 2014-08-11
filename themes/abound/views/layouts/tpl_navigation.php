@@ -8,7 +8,7 @@
           </a>
      
           <!-- Be sure to leave the brand out there if you want it shown -->
-          <a class="brand" href="#">abound <small>admin theme v1.1</small></a>
+          <a class="brand" href="#">Ieducate <small>SMS</small></a>
           
           <div class="nav-collapse">
 			<?php $this->widget('zii.widgets.CMenu',array(
@@ -18,20 +18,23 @@
                     'encodeLabel'=>false,
                     'items'=>array(
                         array('label'=>'Dashboard', 'url'=>array('/site/index')),
-                        array('label'=>'Graphs & Charts', 'url'=>array('/site/page', 'view'=>'graphs')),
-                        array('label'=>'Forms', 'url'=>array('/site/page', 'view'=>'forms')),
+                        array('label'=>'Employees', 'url'=>array('/staff')),
+                        array('label'=>'Students', 'url'=>array('/student')),
                         array('label'=>'Tables', 'url'=>array('/site/page', 'view'=>'tables')),
-						array('label'=>'Interface', 'url'=>array('/site/page', 'view'=>'interface')),
-                        array('label'=>'Typography', 'url'=>array('/site/page', 'view'=>'typography')),
+                    	array('label'=>'Fees', 'url'=>array('/feepayment')),
+						array('label'=>'Examinations', 'url'=>array('/examrecord')),
+                        array('label'=>'Transportation', 'url'=>array('/transportation')),
                         /*array('label'=>'Gii generated', 'url'=>array('customer/index')),*/
-                        array('label'=>'My Account <span class="caret"></span>', 'url'=>'#','itemOptions'=>array('class'=>'dropdown','tabindex'=>"-1"),'linkOptions'=>array('class'=>'dropdown-toggle','data-toggle'=>"dropdown"), 
+                        array('label'=>'Admin <span class="caret"></span>', 'url'=>'#','itemOptions'=>array('class'=>'dropdown','tabindex'=>"-1"),'linkOptions'=>array('class'=>'dropdown-toggle','data-toggle'=>"dropdown"), 
                         'items'=>array(
-                            array('label'=>'My Messages <span class="badge badge-warning pull-right">26</span>', 'url'=>'#'),
-							array('label'=>'My Tasks <span class="badge badge-important pull-right">112</span>', 'url'=>'#'),
-							array('label'=>'My Invoices <span class="badge badge-info pull-right">12</span>', 'url'=>'#'),
-							array('label'=>'Separated link', 'url'=>'#'),
-							array('label'=>'One more separated link', 'url'=>'#'),
-                        )),
+                            array('label'=>'Departments <span class="badge badge-warning pull-right"></span>', 'url'=>array('/department')),
+							array('label'=>'Hostels <span class="badge badge-important pull-right"></span>', 'url'=>array('/dormroom')),
+							array('label'=>'Users<span class="badge badge-info pull-right"></span>', 'url'=>array('/user')),
+							array('label'=>'Roles<span class="badge badge-info pull-right"></span>', 'url'=>array('/userrole')),
+							array('label'=>'Vendor<span class="badge badge-info pull-right"></span>', 'url'=>array('/vendor')),           
+                        	array('label'=>'Curriculum <span class="badge badge-info pull-right"></span>', 'url'=>array('/curriculum')),
+                                	array('label'=>'Parents<span class="badge badge-info pull-right"></span>', 'url'=>array('/parents')),
+                    )),
                         array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
                     ),
