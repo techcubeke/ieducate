@@ -119,7 +119,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'joindate'); ?>
-		<?php echo $form->textField($model,'joindate'); ?>
+	<?php echo $form->textField($model,'joindate'); ?>
 		<?php echo $form->error($model,'joindate'); ?>
 	</div>
 

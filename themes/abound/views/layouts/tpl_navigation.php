@@ -8,7 +8,7 @@
           </a>
      
           <!-- Be sure to leave the brand out there if you want it shown -->
-          <a class="brand" href="#">Ieducate <small>SMS</small></a>
+          <a class="brand" href="#">iEducate <small>SMS</small></a>
           
           <div class="nav-collapse">
 			<?php $this->widget('zii.widgets.CMenu',array(
