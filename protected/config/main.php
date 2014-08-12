@@ -6,6 +6,34 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
+		//cGrid styling with Bootstrap
+		'components' => array(
+				'widgetFactory' => array(
+						'widgets' => array(
+								'CLinkPager' => array(
+										'htmlOptions' => array(
+												'class' => 'pagination'
+										),
+										'header' => false,
+										'maxButtonCount' => 5,
+										'cssFile' => false,
+								),
+								'CGridView' => array(
+										'htmlOptions' => array(
+												'class' => 'table-responsive'
+										),
+										'pagerCssClass' => 'dataTables_paginate paging_bootstrap',
+										'itemsCssClass' => 'table table-striped table-hover',
+										'cssFile' => false,
+										'summaryCssClass' => 'dataTables_info',
+										'summaryText' => 'Showing {start} to {end} of {count} entries',
+										'template' => '{items}<div class="row"><div class="col-md-5 col-sm-12">{summary}</div><div class="col-md-7 col-sm-12">{pager}</div></div><br />',
+								),
+						),
+				),
+		),	
+		
+		
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'school system',
 	'theme'=>'abound',
@@ -18,6 +46,9 @@ return array(
 		'application.components.*',
 	),
 
+		
+		
+		
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 
@@ -29,13 +60,18 @@ return array(
 		),
 
 	),
+		
 
 	// application components
 	'components'=>array(
-		'user'=>array(
+				'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+			
+			
+			
+			
 		// uncomment the following to enable URLs in path-format
 
 			'urlManager'=>array(
@@ -83,10 +119,15 @@ return array(
 		),
 	),
 
+	
+
+
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'smbugua11@gmail.com',
 	),
+
 );
+	

@@ -19,9 +19,11 @@
 		<?php echo $form->textField($model,'dormID'); ?>
 	</div>
 
+	
 	<div class="row">
-		<?php echo $form->label($model,'adminno'); ?>
-		<?php echo $form->textField($model,'adminno',array('size'=>33,'maxlength'=>33)); ?>
+	
+		<?php echo $form->label($model,'studentID'); ?>
+		<?php echo $form->textField($model,'studentID'); ?>
 	</div>
 
 	<div class="row">
@@ -79,10 +81,7 @@
 		<?php echo $form->textField($model,'admindate'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'gender'); ?>
-		<?php echo $form->textField($model,'gender',array('size'=>33,'maxlength'=>33)); ?>
-	</div>
+
 
 	<div class="row">
 		<?php echo $form->label($model,'religion'); ?>

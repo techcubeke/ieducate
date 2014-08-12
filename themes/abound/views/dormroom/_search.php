@@ -3,6 +3,8 @@
 /* @var $model Dormroom */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="wide form">
 
@@ -11,23 +13,13 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'dormID'); ?>
-		<?php echo $form->textField($model,'dormID'); ?>
-	</div>
-
+	
 	<div class="row">
 		<?php echo $form->label($model,'dormname'); ?>
 		<?php echo $form->textField($model,'dormname',array('size'=>20,'maxlength'=>20)); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'beds'); ?>
-		<?php echo $form->textField($model,'beds'); ?>
-	</div>
-
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<button class="btn btn-success">Search</button>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -915,3 +915,14 @@ Stack trace:
 REQUEST_URI=/ieducate/student/create
 HTTP_REFERER=http://localhost:8080/ieducate/student
 ---
+2014/08/12 15:25:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Dorm9".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('Dorm9')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('Dorm9')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dormroom/Dorm9')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/dormroom/Dorm9
+HTTP_REFERER=http://localhost:8080/ieducate/dormroom/create
+---

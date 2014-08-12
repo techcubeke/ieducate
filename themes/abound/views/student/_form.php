@@ -138,7 +138,7 @@
 		</div>
 	</div>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<button class="btn btn-success">Create</button>
 	</div>
 
 	<?php $this->endWidget(); ?>
