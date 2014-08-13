@@ -3,13 +3,13 @@
 /* @var $model Feetermdate */
 
 $this->breadcrumbs=array(
-	'Feetermdates'=>array('index'),
+	'Fee Termdates'=>array('index'),
 	'Manage',
 );
 
 $this->menu=array(
-	array('label'=>'List Feetermdate', 'url'=>array('index')),
-	array('label'=>'Create Feetermdate', 'url'=>array('create')),
+	array('label'=>'List Fee Termdate', 'url'=>array('index')),
+	array('label'=>'Create Fee Termdate', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -44,6 +44,14 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'id'=>'feetermdate-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+		'htmlOptions' => array('class' => 'table table-striped'),
+		'pagerCssClass' => '',
+		'pager' => array(
+				'class' => 'CLinkPager',
+				'selectedPageCssClass' => 'active',
+				'hiddenPageCssClass' => 'disabled',
+				'htmlOptions' => array('class' => 'pagination pagination-lg'),
+		),
 	'columns'=>array(
 		'feetermdateID',
 		'termnumber',

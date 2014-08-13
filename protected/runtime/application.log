@@ -926,3 +926,152 @@ Stack trace:
 REQUEST_URI=/ieducate/dormroom/Dorm9
 HTTP_REFERER=http://localhost:8080/ieducate/dormroom/create
 ---
+2014/08/12 19:14:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ieducate/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8080/ieducate/department/update/3
+---
+2014/08/13 11:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "manage".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('manage')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('manage')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('feepayment/mana...')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/feepayment/manage
+---
+2014/08/13 11:12:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "manage.php".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('manage.php')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('manage.php')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('feepayment/mana...')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/feepayment/manage.php
+---
+2014/08/13 11:13:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "manage".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('manage')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('manage')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('feepayment/mana...')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/feepayment/manage
+---
+2014/08/13 11:13:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "manage.php".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('manage.php')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('manage.php')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('feepayment/mana...')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/feepayment/manage.php
+---
+2014/08/13 11:13:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "manage".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('manage')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('manage')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('feepayment/mana...')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/feepayment/manage
+---
+2014/08/13 11:13:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manage".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('manage')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ieducate/manage
+---
+2014/08/13 11:14:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "feemanage".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('feemanage')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ieducate/feemanage
+---
+2014/08/13 11:16:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "feemanage".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('feemanage')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ieducate/feemanage
+---
+2014/08/13 11:18:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "feemanage".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('feemanage')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ieducate/feemanage
+---
+2014/08/13 11:34:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "feepayment".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('feepayment')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('feepayment')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/feepayment')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/site/feepayment
+HTTP_REFERER=http://localhost:8080/ieducate/site/page?view=feemanage
+---
+2014/08/13 11:34:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "feepayment".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('feepayment')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('feepayment')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/feepayment')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/site/feepayment
+---
+2014/08/13 11:35:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "feepayment".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('feepayment')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('feepayment')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/feepayment')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/site/feepayment
+---
+2014/08/13 11:36:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ieducate".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('ieducate')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('ieducate')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/ieducate/f...')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/site/ieducate/feepayment
+HTTP_REFERER=http://localhost:8080/ieducate/site/page?view=feemanage
+---
+2014/08/13 11:48:12 [error] [php] Undefined variable: content (C:\wamp\www\ieducate\themes\abound\views\site\pages\feemanage.php:20)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\wamp\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\Yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#3 C:\wamp\Yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#5 C:\wamp\Yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\wamp\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\wamp\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/site/page?view=feemanage
+in C:\wamp\www\ieducate\themes\abound\views\site\pages\feemanage.php (20)
+in C:\wamp\www\ieducate\index.php (13)

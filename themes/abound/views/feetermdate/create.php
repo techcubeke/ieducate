@@ -3,13 +3,13 @@
 /* @var $model Feetermdate */
 
 $this->breadcrumbs=array(
-	'Feetermdates'=>array('index'),
+	'Fee Termdates'=>array('index'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Feetermdate', 'url'=>array('index')),
-	array('label'=>'Manage Feetermdate', 'url'=>array('admin')),
+	array('label'=>'List Fee Termdates', 'url'=>array('index')),
+	array('label'=>'Manage Fee Termdates', 'url'=>array('admin')),
 );
 ?>
 

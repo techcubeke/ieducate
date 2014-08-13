@@ -5,7 +5,8 @@
 ?>
 <link
 	href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
+<script src="../../js/bootstrap.min.js">
+</script>
 
 <div class="form">
 
@@ -74,7 +75,7 @@
 		<div class="span3 offset2">
 			<?php echo $form->labelEx($model,'dateofbirth'); ?>
 			<?php echo $form->textField($model,'dateofbirth'); ?>
-			<?php echo $form->error($model,'dateofbirth'); ?>
+            <?php echo $form->error($model,'dateofbirth'); ?>
 		</div>
 	</div>
 

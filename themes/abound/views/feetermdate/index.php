@@ -3,12 +3,12 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Feetermdates',
+	'Fee Termdates',
 );
 
 $this->menu=array(
-	array('label'=>'Create Feetermdate', 'url'=>array('create')),
-	array('label'=>'Manage Feetermdate', 'url'=>array('admin')),
+	array('label'=>'Create Fee Termdates', 'url'=>array('create')),
+	array('label'=>'Manage Fee Termdates', 'url'=>array('admin')),
 );
 ?>
 

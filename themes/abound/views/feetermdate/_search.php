@@ -3,6 +3,8 @@
 /* @var $model Feetermdate */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="wide form">
 
@@ -11,53 +13,34 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'feetermdateID'); ?>
-		<?php echo $form->textField($model,'feetermdateID'); ?>
-	</div>
+	
 
 	<div class="row">
+    <div class="span2">
 		<?php echo $form->label($model,'termnumber'); ?>
 		<?php echo $form->textField($model,'termnumber'); ?>
 	</div>
 
-	<div class="row">
+	<div class="span2 offset1">
 		<?php echo $form->label($model,'termtitle'); ?>
 		<?php echo $form->textField($model,'termtitle',array('size'=>50,'maxlength'=>50)); ?>
 	</div>
 
-	<div class="row">
+	<div class="span2 offset2">
 		<?php echo $form->label($model,'periodfrom'); ?>
 		<?php echo $form->textField($model,'periodfrom'); ?>
 	</div>
 
-	<div class="row">
+</div>
+
+<div class="row">
 		<?php echo $form->label($model,'periodto'); ?>
 		<?php echo $form->textField($model,'periodto'); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'percentagecollection'); ?>
-		<?php echo $form->textField($model,'percentagecollection'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'duedate'); ?>
-		<?php echo $form->textField($model,'duedate'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'monthcount'); ?>
-		<?php echo $form->textField($model,'monthcount'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'dateadded'); ?>
-		<?php echo $form->textField($model,'dateadded'); ?>
-	</div>
+	
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<button class="btn btn-primary" type="submit">Search</button>
 	</div>
 
 <?php $this->endWidget(); ?>

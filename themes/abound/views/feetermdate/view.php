@@ -3,16 +3,16 @@
 /* @var $model Feetermdate */
 
 $this->breadcrumbs=array(
-	'Feetermdates'=>array('index'),
+	'Fee Termdates'=>array('index'),
 	$model->feetermdateID,
 );
 
 $this->menu=array(
-	array('label'=>'List Feetermdate', 'url'=>array('index')),
-	array('label'=>'Create Feetermdate', 'url'=>array('create')),
-	array('label'=>'Update Feetermdate', 'url'=>array('update', 'id'=>$model->feetermdateID)),
-	array('label'=>'Delete Feetermdate', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->feetermdateID),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Feetermdate', 'url'=>array('admin')),
+	array('label'=>'List Fee Termdates', 'url'=>array('index')),
+	array('label'=>'Create Fee Termdates', 'url'=>array('create')),
+	array('label'=>'Update Fee Termdates', 'url'=>array('update', 'id'=>$model->feetermdateID)),
+	array('label'=>'Delete Fee Termdates', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->feetermdateID),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manage Fee Termdates', 'url'=>array('admin')),
 );
 ?>
 
