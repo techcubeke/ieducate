@@ -9,9 +9,7 @@
 	<?php echo CHtml::link(CHtml::encode($data->feestructureID), array('view', 'id'=>$data->feestructureID)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('studentID')); ?>:</b>
-	<?php echo CHtml::encode($data->studentID); ?>
-	<br />
+	
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('name')); ?>:</b>
 	<?php echo CHtml::encode($data->name); ?>

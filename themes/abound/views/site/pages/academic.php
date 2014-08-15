@@ -99,7 +99,7 @@
 			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../parents'">Parents</button>
 	</div>
 	<div class="span3 offset2">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../grades'">Adjust Fee Termdates</button>
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../grades'">Grades</button>
 	</div>
 </div>
 

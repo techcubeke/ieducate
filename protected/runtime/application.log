@@ -1105,3 +1105,212 @@ Stack trace:
 REQUEST_URI=/ieducate/site/page?view=academenic
 HTTP_REFERER=http://localhost:8080/ieducate/staff
 ---
+2014/08/15 12:51:40 [error] [php] Missing argument 2 for CActiveForm::label(), called in C:\wamp\www\ieducate\themes\abound\views\parents\_search.php on line 23 and defined (C:\wamp\Yii\framework\web\widgets\CActiveForm.php:545)
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CBaseController.php(95): ParentsController->renderInternal()
+#1 C:\wamp\Yii\framework\web\CController.php(869): ParentsController->renderFile()
+#2 C:\wamp\www\ieducate\themes\abound\views\parents\admin.php(40): ParentsController->renderPartial()
+#3 C:\wamp\Yii\framework\web\CBaseController.php(126): require()
+#4 C:\wamp\Yii\framework\web\CBaseController.php(95): ParentsController->renderInternal()
+#5 C:\wamp\Yii\framework\web\CController.php(869): ParentsController->renderFile()
+#6 C:\wamp\Yii\framework\web\CController.php(782): ParentsController->renderPartial()
+#7 C:\wamp\www\ieducate\protected\controllers\ParentsController.php(143): ParentsController->render()
+#8 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): ParentsController->actionAdmin()
+#9 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): ParentsController->runAction()
+#11 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): ParentsController->filterAccessControl()
+#14 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\Yii\framework\web\CController.php(265): ParentsController->runActionWithFilters()
+#17 C:\wamp\Yii\framework\web\CWebApplication.php(282): ParentsController->run()
+#18 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\wamp\www\ieducate\index.php(13): CWebApplication->run()
+REQUEST_URI=/ieducate/parents/admin
+in C:\wamp\www\ieducate\themes\abound\views\parents\_search.php (23)
+in C:\wamp\www\ieducate\themes\abound\views\parents\admin.php (40)
+in C:\wamp\www\ieducate\protected\controllers\ParentsController.php (143)
+2014/08/15 12:53:50 [error] [exception.CException] exception 'CException' with message 'The column must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php:387
+Stack trace:
+#0 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(358): CGridView->createDataColumn('parent relation')
+#1 C:\wamp\Yii\framework\zii\widgets\grid\CGridView.php(334): CGridView->initColumns()
+#2 C:\wamp\Yii\framework\web\CBaseController.php(147): CGridView->init()
+#3 C:\wamp\Yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 C:\wamp\www\ieducate\themes\abound\views\parents\admin.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#5 C:\wamp\Yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\ied...')
+#6 C:\wamp\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\ied...', Array, true)
+#7 C:\wamp\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\ied...', Array, true)
+#8 C:\wamp\Yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#9 C:\wamp\www\ieducate\protected\controllers\ParentsController.php(143): CController->render('admin', Array)
+#10 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): ParentsController->actionAdmin()
+#11 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#20 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('parents/admin')
+#21 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#22 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/ieducate/parents/admin
+HTTP_REFERER=http://localhost:8080/ieducate/parents/create
+---
+2014/08/15 13:20:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\Yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('grades/delete')
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ieducate/grades/delete/3
+HTTP_REFERER=http://localhost:8080/ieducate/grades/admin
+---
+2014/08/15 13:20:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\Yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('grades/delete')
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ieducate/grades/delete/3
+HTTP_REFERER=http://localhost:8080/ieducate/grades/admin
+---
+2014/08/15 13:22:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ieducate/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8080/ieducate/grades/update/3
+---
+2014/08/15 14:10:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: '' for column 'amount' at row 1. The SQL statement executed was: INSERT INTO `feestructure` (`name`, `description`, `amount`) VALUES (:yp0, :yp1, :yp2).
+in C:\wamp\www\ieducate\protected\controllers\FeestructureController.php (73)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/15 14:10:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: '' for column 'amount' at row 1. The SQL statement executed was: INSERT INTO `feestructure` (`name`, `description`, `amount`) VALUES (:yp0, :yp1, :yp2)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\ieducate\protected\controllers\FeestructureController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): FeestructureController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('feestructure/cr...')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ieducate/feestructure/create
+HTTP_REFERER=http://localhost:8080/ieducate/feestructure/create
+---
+2014/08/15 14:15:59 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'date' at row 1. The SQL statement executed was: INSERT INTO `examrecord` (`academicsessionID`, `examtermID`, `subjectID`, `classID`, `studentID`, `gradeID`, `date`, `totalmarks`, `score`, `percentage`, `remarks`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10).
+in C:\wamp\www\ieducate\protected\controllers\ExamrecordController.php (73)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/15 14:15:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'date' at row 1. The SQL statement executed was: INSERT INTO `examrecord` (`academicsessionID`, `examtermID`, `subjectID`, `classID`, `studentID`, `gradeID`, `date`, `totalmarks`, `score`, `percentage`, `remarks`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\ieducate\protected\controllers\ExamrecordController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): ExamrecordController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('examrecord/crea...')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ieducate/examrecord/create
+HTTP_REFERER=http://localhost:8080/ieducate/examrecord/create
+---
+2014/08/15 15:08:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\Yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dormroom/delete...')
+#10 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ieducate/dormroom/delete/Dorm
+HTTP_REFERER=http://localhost:8080/ieducate/dormroom/admin
+---
+2014/08/15 15:08:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Dorm".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('Dorm')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('Dorm')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dormroom/Dorm')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/dormroom/Dorm
+HTTP_REFERER=http://localhost:8080/ieducate/dormroom
+---
+2014/08/15 15:08:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Dorm".' in C:\wamp\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CController.php(270): CController->missingAction('Dorm')
+#1 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('Dorm')
+#2 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('dormroom/Dorm')
+#3 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ieducate/dormroom/Dorm
+HTTP_REFERER=http://localhost:8080/ieducate/dormroom
+---
+2014/08/15 15:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "feemanage".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('feemanage')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ieducate/feemanage
+HTTP_REFERER=http://localhost:8080/ieducate/site/index
+---
+2014/08/15 15:48:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "visirorpass".' in C:\wamp\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('visirorpass')
+#1 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ieducate/visirorpass
+HTTP_REFERER=http://localhost:8080/ieducate/site/index
+---

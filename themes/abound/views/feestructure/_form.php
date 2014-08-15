@@ -17,28 +17,23 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'studentID'); ?>
-		<?php echo $form->textField($model,'studentID'); ?>
-		<?php echo $form->error($model,'studentID'); ?>
-	</div>
 
 	<div class="row">
+		<div class="span3">
 		<?php echo $form->labelEx($model,'name'); ?>
 		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
-
+	<div class="span3 offset1">
+		<?php echo $form->labelEx($model,'amount'); ?>
+		<?php echo $form->textField($model,'amount',array('size'=>12,'maxlength'=>12)); ?>
+		<?php echo $form->error($model,'amount'); ?>
+        </div>
+</div>
 	<div class="row">
 		<?php echo $form->labelEx($model,'description'); ?>
 		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'description'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'amount'); ?>
-		<?php echo $form->textField($model,'amount',array('size'=>12,'maxlength'=>12)); ?>
-		<?php echo $form->error($model,'amount'); ?>
 	</div>
 
 	<div class="row buttons">

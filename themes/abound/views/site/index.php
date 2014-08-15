@@ -19,9 +19,9 @@ $gridDataProvider = new CArrayDataProvider(array(
 		<div class="stat-block">
 			<ul>
 				<li class="stat-graph inlinebar" id="weekly-visit">8,4,6,5,9,10</li>
-				<li class="stat-count"><span>$23,000</span><span>Weekly Sales</span>
+				<li class="stat-count"><span>Student</span><span>Management</span>
 				</li>
-				<li class="stat-percent"><span class="text-success stat-percent">20%</span>
+				<li class="stat-percent"><span class="text-success stat-percent"></span>
 				</li>
 			</ul>
 		</div>
@@ -30,9 +30,9 @@ $gridDataProvider = new CArrayDataProvider(array(
 		<div class="stat-block">
 			<ul>
 				<li class="stat-graph inlinebar" id="new-visits">2,4,9,1,5,7,6</li>
-				<li class="stat-count"><span>$123,780</span><span>Monthly Sales</span>
+				<li class="stat-count"><span>$Finance</span><span>Management</span>
 				</li>
-				<li class="stat-percent"><span class="text-error stat-percent">-15%</span>
+				<li class="stat-percent"><span class="text-error stat-percent"></span>
 				</li>
 			</ul>
 		</div>
@@ -41,9 +41,9 @@ $gridDataProvider = new CArrayDataProvider(array(
 		<div class="stat-block">
 			<ul>
 				<li class="stat-graph inlinebar" id="unique-visits">200,300,500,200,300,500,1000</li>
-				<li class="stat-count"><span>$12,456</span><span>Open Invoices</span>
+				<li class="stat-count"><span>Accomodation</span><span>Management</span>
 				</li>
-				<li class="stat-percent"><span class="text-success stat-percent">10%</span>
+				<li class="stat-percent"><span class="text-success stat-percent"></span>
 				</li>
 			</ul>
 		</div>
@@ -52,9 +52,9 @@ $gridDataProvider = new CArrayDataProvider(array(
 		<div class="stat-block">
 			<ul>
 				<li class="stat-graph inlinebar" id="">1000,3000,6000,8000,3000,8000,10000</li>
-				<li class="stat-count"><span>$25,000</span><span>Overdue</span></li>
+				<li class="stat-count"><span>Admin</span><span>Overview</span></li>
 				<li class="stat-percent"><span><span
-						class="text-success stat-percent">20%</span>
+						class="text-success stat-percent"></span>
 				
 				</li>
 			</ul>
@@ -82,36 +82,36 @@ $gridDataProvider = new CArrayDataProvider(array(
 	<div class="span3">
 		<div class="summary">
 			<ul>
-				<li><span class="summary-icon"> <img
-						src="<?php echo $baseUrl ;?>/img/credit.png" width="36"
-						height="36" alt="Monthly Income">
-				</span> <span class="summary-number">$78,245</span> <span
-					class="summary-title"> Monthly Income</span>
+				<li><span class="summary-icon" onclick="document.location.href = '../feepayment'">
+                 <img src="<?php echo $baseUrl ;?>/img/credit.png " width="36"
+                        height="36" alt="Monthly Income">
+				</span> <span class="summary-number">$Fee</span> <span
+					class="summary-title"> Payment</span>
 				</li>
-				<li><span class="summary-icon"> <img
-						src="<?php echo $baseUrl ;?>/img/page_white_edit.png" width="36"
+				<li><span class="summary-icon" onclick="document.location.href = '../subject'">
+                 <img	src="<?php echo $baseUrl ;?>/img/page_white_edit.png" width="36"
 						height="36" alt="Open Invoices">
-				</span> <span class="summary-number">125</span> <span
-					class="summary-title"> Open Invoices</span>
+				</span> <span class="summary-number">Subjects</span> <span
+					class="summary-title">setup</span>
 				</li>
-				<li><span class="summary-icon"> <img
-						src="<?php echo $baseUrl ;?>/img/page_white_excel.png" width="36"
+				<li><span class="summary-icon" onclick="document.location.href = '../staff'">
+						<img src="<?php echo $baseUrl ;?>/img/page_white_excel.png" width="36"
 						height="36" alt="Open Quotes<">
-                </span><span class="summary-number">53</span> <span
-						class="summary-title"> Open Quotes</span>
+                </span><span class="summary-number">Staff</span> <span
+						class="summary-title"> management</span>
 				
 				</li>
-				<li><span class="summary-icon"> <img
-						src="<?php echo $baseUrl ;?>/img/group.png" width="36" height="36"
+				<li><span class="summary-icon" onclick="document.location.href = '../user'">
+                <img src="<?php echo $baseUrl ;?>/img/group.png" width="36" height="36"
 						alt="Active Members">
-				</span> <span class="summary-number">654,321</span> <span
-					class="summary-title"> Active Members</span>
+				</span> <span class="summary-number">User</span> <span
+					class="summary-title"> Management</span>
 				</li>
-				<li><span class="summary-icon"> <img
-						src="<?php echo $baseUrl ;?>/img/folder_page.png" width="36"
+				<li><span class="summary-icon" onclick="document.location.href = '../visitorpass'">
+                <img src="<?php echo $baseUrl ;?>/img/folder_page.png" width="36"
 						height="36" alt="Recent Conversions">
-				</span> <span class="summary-number">630</span> <span
-					class="summary-title"> Recent Conversions</span></li>
+				</span> <span class="summary-number">Visitor</span> <span
+					class="summary-title"> Pass</span></li>
 
 			</ul>
 		</div>

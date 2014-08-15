@@ -3,7 +3,7 @@
 /* @var $model Parents */
 
 $this->breadcrumbs=array(
-	'Parents'=>array('index'),
+	'Parent'=>array('index'),
 	'Create',
 );
 
