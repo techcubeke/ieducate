@@ -3,6 +3,8 @@
 /* @var $model Parents */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="form">
 
@@ -16,23 +18,24 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
+    <div class="span3">
 		<?php echo $form->labelEx($model,'studentID'); ?>
 		<?php echo $form->textField($model,'studentID'); ?>
 		<?php echo $form->error($model,'studentID'); ?>
 	</div>
 
-	<div class="row">
+	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'fullname'); ?>
 		<?php echo $form->textField($model,'fullname',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'fullname'); ?>
 	</div>
 
-	<div class="row">
+	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'photoimage'); ?>
 		<?php echo $form->textField($model,'photoimage'); ?>
 		<?php echo $form->error($model,'photoimage'); ?>
 	</div>
-
+</div>
 	<div class="row">
 		<?php echo $form->labelEx($model,'parentrelation'); ?>
 		<?php echo $form->textField($model,'parentrelation',array('size'=>50,'maxlength'=>50)); ?>

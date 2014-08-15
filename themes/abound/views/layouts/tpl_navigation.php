@@ -19,11 +19,10 @@
                     'items'=>array(
                         array('label'=>'Dashboard', 'url'=>array('/site/index')),
                         array('label'=>'Employees', 'url'=>array('/staff')),
-                        array('label'=>'Students', 'url'=>array('/student')),
-                        array('label'=>'Tables', 'url'=>array('/site/page', 'view'=>'tables')),
+                        array('label'=>'Academics', 'url'=>array('/site/page', 'view'=>'academic')),
                     	array('label'=>'Fees', 'url'=>array('/site/page', 'view'=>'feemanage')),
-						array('label'=>'Examinations', 'url'=>array('/examrecord')),
-                        array('label'=>'Transportation', 'url'=>array('/transportation')),
+                    	array('label'=>'Transportation', 'url'=>array('/site/page', 'view'=>'Transportation')),
+                    	array('label'=>'Examinations', 'url'=>array('/examrecord')),
                         /*array('label'=>'Gii generated', 'url'=>array('customer/index')),*/
                         array('label'=>'Admin <span class="caret"></span>', 'url'=>'#','itemOptions'=>array('class'=>'dropdown','tabindex'=>"-1"),'linkOptions'=>array('class'=>'dropdown-toggle','data-toggle'=>"dropdown"), 
                         'items'=>array(
@@ -48,7 +47,7 @@
     <div class="navbar-inner">
     	<div class="container">
         
-        	<div class="style-switcher pull-left">
+        <!-- 	<div class="style-switcher pull-left">
                 <a href="javascript:chooseStyle('none', 60)" checked="checked"><span class="style" style="background-color:#0088CC;"></span></a>
                 <a href="javascript:chooseStyle('style2', 60)"><span class="style" style="background-color:#7c5706;"></span></a>
                 <a href="javascript:chooseStyle('style3', 60)"><span class="style" style="background-color:#468847;"></span></a>
@@ -56,7 +55,7 @@
                 <a href="javascript:chooseStyle('style5', 60)"><span class="style" style="background-color:#d85515;"></span></a>
                 <a href="javascript:chooseStyle('style6', 60)"><span class="style" style="background-color:#a00a69;"></span></a>
                 <a href="javascript:chooseStyle('style7', 60)"><span class="style" style="background-color:#a30c22;"></span></a>
-          	</div>
+          	</div>  -->
            <form class="navbar-search pull-right" action="">
            	 
            <input type="text" class="search-query span2" placeholder="Search">

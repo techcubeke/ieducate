@@ -3,6 +3,8 @@
 /* @var $model Feestructure */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="form">
 
@@ -40,7 +42,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<button class="btn btn-primary" type="submit">Submit</button>
 	</div>
 
 <?php $this->endWidget(); ?>

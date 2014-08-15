@@ -35,6 +35,7 @@
 	<div class="span3 offset2">
 		<?php echo $form->labelEx($model,'paymentdate'); ?>
 		<?php echo $form->textField($model,'paymentdate'); ?>
+        
 		<?php echo $form->error($model,'paymentdate'); ?>
 	</div>
 </div>
@@ -82,15 +83,14 @@
 		<?php echo $form->textArea($model,'remarks',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'remarks'); ?>
 	</div>
-
-	<div class="span3 offset1">
+    </div>
+	<div class="row">
 		<?php echo $form->labelEx($model,'dateadded'); ?>
 		<?php echo $form->textField($model,'dateadded'); ?>
 		<?php echo $form->error($model,'dateadded'); ?>
 	</div>
-</div>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<button class="bt btn-success" type="submit">Create</button>
 	</div>
 
 <?php $this->endWidget(); ?>

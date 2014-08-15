@@ -1075,3 +1075,33 @@ Stack trace:
 REQUEST_URI=/ieducate/site/page?view=feemanage
 in C:\wamp\www\ieducate\themes\abound\views\site\pages\feemanage.php (20)
 in C:\wamp\www\ieducate\index.php (13)
+2014/08/15 11:12:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "academenic" was not found.' in C:\wamp\Yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\wamp\Yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('academenic')
+#1 C:\wamp\Yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\wamp\Yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\wamp\Yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/ieducate/site/page?view=academenic
+HTTP_REFERER=http://localhost:8080/ieducate/staff
+---
+2014/08/15 11:12:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "academenic" was not found.' in C:\wamp\Yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\wamp\Yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('academenic')
+#1 C:\wamp\Yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\wamp\Yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\wamp\Yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/ieducate/site/page?view=academenic
+HTTP_REFERER=http://localhost:8080/ieducate/staff
+---
