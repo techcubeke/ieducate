@@ -1314,3 +1314,128 @@ Stack trace:
 REQUEST_URI=/ieducate/visirorpass
 HTTP_REFERER=http://localhost:8080/ieducate/site/index
 ---
+2014/08/16 14:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "Transportation" was not found.' in C:\wamp\Yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\wamp\Yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('Transportation')
+#1 C:\wamp\Yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\wamp\Yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\wamp\Yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/ieducate/site/page?view=Transportation
+HTTP_REFERER=http://localhost:8080/ieducate/examrecord/create
+---
+2014/08/17 11:29:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "Transportation" was not found.' in C:\wamp\Yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\wamp\Yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('Transportation')
+#1 C:\wamp\Yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\wamp\Yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\wamp\Yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/ieducate/site/page?view=Transportation
+HTTP_REFERER=http://localhost:8080/ieducate/staff
+---
+2014/08/17 11:36:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect time value: '' for column 'outtime' at row 1. The SQL statement executed was: INSERT INTO `visitorpass` (`visitorname`, `visitorcardnumber`, `contactnumber`, `outtime`, `numberofvisitors`, `visitpurpose`, `meetingwith`, `visitdate`, `intime`, `address`, `comments`, `dateadded`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11).
+in C:\wamp\www\ieducate\protected\controllers\VisitorpassController.php (73)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/17 11:36:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect time value: '' for column 'outtime' at row 1. The SQL statement executed was: INSERT INTO `visitorpass` (`visitorname`, `visitorcardnumber`, `contactnumber`, `outtime`, `numberofvisitors`, `visitpurpose`, `meetingwith`, `visitdate`, `intime`, `address`, `comments`, `dateadded`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\ieducate\protected\controllers\VisitorpassController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): VisitorpassController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('visitorpass/cre...')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ieducate/visitorpass/create
+HTTP_REFERER=http://localhost:8080/ieducate/visitorpass/create
+---
+2014/08/17 11:53:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "Transportation" was not found.' in C:\wamp\Yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\wamp\Yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('Transportation')
+#1 C:\wamp\Yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\wamp\Yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\wamp\Yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/ieducate/site/page?view=Transportation
+HTTP_REFERER=http://localhost:8080/ieducate/site/page?view=academic
+---
+2014/08/17 12:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "Transportation" was not found.' in C:\wamp\Yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\wamp\Yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('Transportation')
+#1 C:\wamp\Yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\wamp\Yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\wamp\Yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/ieducate/site/page?view=Transportation
+HTTP_REFERER=http://localhost:8080/ieducate/site/index
+---
+2014/08/17 12:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "Transportation" was not found.' in C:\wamp\Yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\wamp\Yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('Transportation')
+#1 C:\wamp\Yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\wamp\Yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\wamp\Yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/ieducate/site/page?view=Transportation
+HTTP_REFERER=http://localhost:8080/ieducate/site/index
+---
+2014/08/17 12:14:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect time value: '' for column 'arrivalmrng' at row 1. The SQL statement executed was: INSERT INTO `stopdetails` (`routeID`, `stopname`, `fare`, `arrivalmrng`, `depaturemrng`, `arrivalevng`, `depatureevng`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\wamp\www\ieducate\protected\controllers\StopdetailsController.php (73)
+in C:\wamp\www\ieducate\index.php (13)
+2014/08/17 12:14:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect time value: '' for column 'arrivalmrng' at row 1. The SQL statement executed was: INSERT INTO `stopdetails` (`routeID`, `stopname`, `fare`, `arrivalmrng`, `depaturemrng`, `arrivalevng`, `depatureevng`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\wamp\Yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\wamp\Yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\ieducate\protected\controllers\StopdetailsController.php(73): CActiveRecord->save()
+#3 C:\wamp\Yii\framework\web\actions\CInlineAction.php(49): StopdetailsController->actionCreate()
+#4 C:\wamp\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('stopdetails/cre...')
+#14 C:\wamp\Yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\wamp\www\ieducate\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ieducate/stopdetails/create
+HTTP_REFERER=http://localhost:8080/ieducate/stopdetails/create
+---

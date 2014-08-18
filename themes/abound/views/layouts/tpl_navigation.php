@@ -21,7 +21,7 @@
                         array('label'=>'Employees', 'url'=>array('/staff')),
                         array('label'=>'Academics', 'url'=>array('/site/page', 'view'=>'academic')),
                     	array('label'=>'Fees', 'url'=>array('/site/page', 'view'=>'feemanage')),
-                    	array('label'=>'Transportation', 'url'=>array('/site/page', 'view'=>'Transportation')),
+                    	array('label'=>'Transportation', 'url'=>array('/site/page', 'view'=>'transport')),
                     	array('label'=>'Examinations', 'url'=>array('/examrecord')),
                         /*array('label'=>'Gii generated', 'url'=>array('customer/index')),*/
                         array('label'=>'Admin <span class="caret"></span>', 'url'=>'#','itemOptions'=>array('class'=>'dropdown','tabindex'=>"-1"),'linkOptions'=>array('class'=>'dropdown-toggle','data-toggle'=>"dropdown"), 

@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Fee Management</title>
+<title>Transport Management</title>
 <link href="../../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <div class="page-header">
-  <h1 class="offset5">Fee <small>Management</small></h1>
+  <h1 class="offset5">Transport <small>Management</small></h1>
 </div>
 </head>
 <link href="../../../../themes/abound/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -21,7 +21,7 @@
 			'items'=>array(
 				array('label'=>'<i class="icon icon-home"></i>  Dashboard <span class="label label-info pull-right">BETA</span>', 'url'=>array('/site/index'),'itemOptions'=>array('class'=>'')),
 				array('label'=>'<i class="icon icon-search"></i> About this Application<span class="label label-important pull-right">NEW</span>', 'url'=>'http://www.techcube.co.ke/schoolapp'),
-				array('label'=>'<i class="icon icon-envelope"></i> Fee Management Portal <span class="badge badge-success pull-right"></span>', 'url'=>'#'),
+				array('label'=>'<i class="icon icon-envelope"></i>Transport Management Portal <span class="badge badge-success pull-right"></span>', 'url'=>'#'),
 				// Include the operations menu
 				array('label'=>'OPERATIONS','items'=>$this->menu),
 			),
@@ -86,22 +86,27 @@
 
 <div class="row">
 	<div class="span3 offset1">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../feepayment'">Fee Payment</button>
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../transportation'">Transport Recors</button>
 	</div>
 	<div class="span3 offset2">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../feereceipt'">Fee Receipt</button>
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../stopdetails'">Stop Details</button>
 	</div>
 </div>
 <br />
 <br  />
 <div class="row">
 	<div class="span3 offset1">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../feestructure'">Fee Structure</button>
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../route'">Route Details</button>
 	</div>
 	<div class="span3 offset2">
-			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../feetermdate'">Adjust Fee Termdates</button>
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../fuelconsumption'">Fuel Consumption</button>
 	</div>
-</div>
+</div><br />
+<br  />
+<div class="row">
+	<div class="span3 offset1">
+			<button class="btn btn-info" type="submit"  onclick="document.location.href = '../vehicle'">Vehicle Details</button>
+	</div>
 
 <br />
 <br />
@@ -110,7 +115,7 @@
         
             <dl class="dl-horizontal">
               <dt>Note:</dt>
-              <dd>Manage Students Fees And Reciepts Printing</dd>
+              <dd>Manage Transport Details</dd>
               <dt>@School App</dt>
               <dt>&copy; <?php echo date("Y") ?></dt>
                <dt>Date: <?php echo date("d/m/y") ?></dt>

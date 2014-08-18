@@ -3,6 +3,8 @@
 /* @var $model Fuelconsumption */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="wide form">
 
@@ -11,33 +13,16 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'fuelID'); ?>
-		<?php echo $form->textField($model,'fuelID'); ?>
-	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'vehicleID'); ?>
 		<?php echo $form->textField($model,'vehicleID'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'fuelconsumed'); ?>
-		<?php echo $form->textField($model,'fuelconsumed',array('size'=>60,'maxlength'=>120)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'amount'); ?>
-		<?php echo $form->textField($model,'amount',array('size'=>60,'maxlength'=>120)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'consumeddate'); ?>
-		<?php echo $form->textField($model,'consumeddate'); ?>
-	</div>
+	
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<button class="btn-primary" type="submit">Search</button>
 	</div>
 
 <?php $this->endWidget(); ?>

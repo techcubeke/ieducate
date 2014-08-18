@@ -3,6 +3,8 @@
 /* @var $model Route */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="wide form">
 
@@ -11,28 +13,15 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'routeID'); ?>
-		<?php echo $form->textField($model,'routeID'); ?>
-	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'vehicleID'); ?>
-		<?php echo $form->textField($model,'vehicleID'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'routename'); ?>
+		<div class="span3">
+			<?php echo $form->label($model,'routename'); ?>
 		<?php echo $form->textField($model,'routename',array('size'=>60,'maxlength'=>120)); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'noofstops'); ?>
-		<?php echo $form->textField($model,'noofstops',array('size'=>50,'maxlength'=>50)); ?>
-	</div>
-
+</div>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<button class="btn-primary" type="submit">Search</button>
 	</div>
 
 <?php $this->endWidget(); ?>

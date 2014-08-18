@@ -3,7 +3,7 @@
 /* @var $model Transportation */
 
 $this->breadcrumbs=array(
-	'Transportations'=>array('index'),
+	'Transportation'=>array('index'),
 	'Create',
 );
 
@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Transportation</h1>
+<h1>Create Transport Record</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

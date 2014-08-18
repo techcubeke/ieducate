@@ -3,6 +3,8 @@
 /* @var $model Route */
 /* @var $form CActiveForm */
 ?>
+<link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
 <div class="form">
 
@@ -16,25 +18,26 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
+		<div class="span3">	    
 		<?php echo $form->labelEx($model,'vehicleID'); ?>
 		<?php echo $form->textField($model,'vehicleID'); ?>
 		<?php echo $form->error($model,'vehicleID'); ?>
 	</div>
 
-	<div class="row">
+	<div class="span3 offset1">
 		<?php echo $form->labelEx($model,'routename'); ?>
 		<?php echo $form->textField($model,'routename',array('size'=>60,'maxlength'=>120)); ?>
 		<?php echo $form->error($model,'routename'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'noofstops'); ?>
+	<div class="span3 offset2">
+		<?php echo $form->labelEx($model,'no of stops'); ?>
 		<?php echo $form->textField($model,'noofstops',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'noofstops'); ?>
 	</div>
-
+</div>
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<button class="btn-success" type="submit">Create</button>.
 	</div>
 
 <?php $this->endWidget(); ?>
